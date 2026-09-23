@@ -41,6 +41,87 @@
 
     <p>Visit my favourite website:</p>
     <a href="https://www.google.com">Click here</a>
+
+    <section class="contact-form">
+    <h3>Contact Me</h3>
+
+    <form action="#" method="post">
+        <label for="name">Full name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="interest">Main interest:</label>
+        <select id="interest" name="interest">
+        <option value="cyber-security">Cyber Security</option>
+        <option value="music">Music</option>
+        <option value="technology">Technology</option>
+        </select>
+
+        <label for="message">Your message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+    </section>
+
   </main>
+  <section class="profile-form">
+  <h3>Create Your Visitor Profile</h3>
+  <p>Tell me a little about your interests.</p>
+
+  <form id="profileForm">
+    <label for="name">Your name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="interest">Which interest do you enjoy most?</label>
+    <select id="interest" name="interest" required>
+      <option value="">Choose an option</option>
+      <option value="Cyber Security">Cyber Security</option>
+      <option value="Music">Music</option>
+      <option value="Technology">Technology</option>
+    </select>
+
+    <fieldset>
+      <legend>How would you describe your experience level?</legend>
+
+      <label>
+        <input type="radio" name="experience" value="Beginner" required>
+        Beginner
+      </label>
+
+      <label>
+        <input type="radio" name="experience" value="Intermediate">
+        Intermediate
+      </label>
+
+      <label>
+        <input type="radio" name="experience" value="Advanced">
+        Advanced
+      </label>
+    </fieldset>
+
+    <label for="rating">
+      How interested are you? <span id="ratingValue">5</span>/10
+    </label>
+    <input type="range" id="rating" name="rating" min="1" max="10" value="5">
+
+    <label>
+      <input type="checkbox" id="updates" name="updates">
+      I would like to receive website updates
+    </label>
+
+    <label for="message">Tell me why this interests you:</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <button type="submit">Create Profile</button>
+  </form>
+
+  <div id="result" class="result" aria-live="polite"></div>
+</section>
+
+<script src="script.js"></script>
+  
 </body>
 </html>

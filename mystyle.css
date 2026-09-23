@@ -59,4 +59,95 @@ a {
   .lists div {
     flex: 1;
   }
+
+  .contact-form {
+  margin-top: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+  padding: 10px;
+}
+
+button {
+  background-color: maroon;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8b0000;
+}
+
+.profile-form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+#profileForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 12px;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+  padding: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+input[type="range"] {
+  padding: 0;
+}
+
+button {
+  background-color: maroon;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8b0000;
+}
+
+.result {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  border-left: 5px solid maroon;
+  background-color: #f5e7e7;
+}
+
+.result.show {
+  display: block;
+}
 }
