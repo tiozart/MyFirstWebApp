@@ -39,8 +39,31 @@
       </div>
     </section>
 
-    <p>Visit my favourite website:</p>
+    <p>Visit Google below:</p>
     <a href="https://www.google.com">Click here</a>
+
+    <section class="lists"> 
+      <div> 
+        <h3>Random Quote</h3>
+
+        <button onclick="getQuote()">Get Quote</button>
+
+        <p id="quote">Click the button to get a quote.</p>
+
+        <script>
+            async function getQuote() {
+                const response = await fetch(
+                    "https://api.freeapi.app/api/v1/public/quotes/quote/random"
+                );
+
+                const data = await response.json();
+
+                document.getElementById("quote").textContent =
+                    data.data.content;
+            }
+        </script>
+      </div>
+    </section>
 
     <section class="contact-form">
     <h3>Contact Me</h3>
